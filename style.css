@@ -140,7 +140,7 @@ body {
             cursor: pointer;
           }
 
-          select {
+          #month,#year {
             height: 2em;
             font-size: 12px;
           }
@@ -238,6 +238,7 @@ body {
 }
 
 @media (width <= 600px) {
+  
   body .parent {
     .curvedshape {
       top: 100%;
