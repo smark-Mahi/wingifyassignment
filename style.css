@@ -257,6 +257,11 @@ body {
         height: 170px;
         background-image: url("./images/mobile-bg.webp");
         clip-path: polygon(75% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+
+        p {
+          margin-top: 2em;
+          
+        }
       }
 
       .clip2 {
