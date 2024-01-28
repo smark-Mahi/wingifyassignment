@@ -1,13 +1,13 @@
 :root {
   --bg_curved_color: #b8acda;
-  --bg_button_color: #2d9cdb;
+  --bg_button_color: #005A80;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
 }
 
 h1,
@@ -15,8 +15,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 ,p{
   margin: 0;
+  font-size: 1em;
+}
+
+.required::after{
+  content: '*';
+  color: red;
   font-size: 1em;
 }
 
@@ -55,7 +61,7 @@ body {
       height: 382px;
 
       .clip {
-        background-image: url("./images/image 1.png");
+        background-image: url("./images/desktop-bg.webp");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -113,12 +119,14 @@ body {
             height: 13px;
           }
 
-          .dob-heading {
-            padding-bottom: 0.5em;
+          p {
+            padding-bottom: 0.2em;
+            font-weight: bold;
           }
           label {
             font-size: 1em;
             font-weight: bold;
+            padding-bottom: 0.2em;
           }
 
           input[type="submit"] {
@@ -247,7 +255,7 @@ body {
       .clip {
         width: auto;
         height: 170px;
-        background-image: url("./images/image 2.png");
+        background-image: url("./images/mobile-bg.webp");
         clip-path: polygon(75% 0, 100% 0, 100% 100%, 0 100%, 0 0);
       }
 

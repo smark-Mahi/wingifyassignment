@@ -18,7 +18,7 @@
           <h2>Create an account</h2>
           <form action="" method="get" id="form">
             <div class="emaill input-control">
-              <label for="email">Enter your Email</label>
+              <label for="email" class="required">Enter your Email</label>
               <input
                 type="email"
                 name="email"
@@ -28,16 +28,16 @@
               <div class="error"></div>
             </div>
             <div>
-              <h4 class="dob-heading">Date of birth (optional)</h4>
+              <p >Date of birth (optional)</p>
               <div class="DOB">
                 <div class="input-control">
-                  <label for="date">Date</label>
+                  <label for="date" class="required">Date</label>
                   <input type="number" id="date" />
                   <div class="error"></div>
                 </div>
                 <div>
                   <label for="month">Month</label>
-                  <select name="month">
+                  <select name="month" id="month" aria-labelledby="month">
                     <option value="month">Month</option>
                     <option value="january">January</option>
                     <option value="february">February</option>
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                   <label for="year">Year</label>
-                  <select name="year">
+                  <select name="year" id="year" aria-labelledby="year" >
                     <option value="year">Year</option>
                     <option value="1985">1985</option>
                     <option value="1986">1986</option>
@@ -65,12 +65,12 @@
               </div>
             </div>
             <div class="passwordd input-control">
-              <label for="password">choose a strong Password</label>
+              <label for="password" class="required">choose a strong Password</label>
               <input type="password" name="password" id="password" />
               <div class="error"></div>
             </div>
             <div class="type0fPerson">
-              <h4>Are you an agency or individual?</h4>
+              <p>Are you an agency or individual?</p>
               <div>
                 <div>
                   <input
